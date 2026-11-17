@@ -10,6 +10,6 @@ window.SW_CONFIG = {
   apiBase: "https://skillworkbench-backend.onrender.com",
   // Stripe Payment Links. Placeholders until the links in STRIPE-SPEC.md
   // are created; subscribe.js shows the launch note while these are unset.
-  stripeMonthly: "STRIPE_LINK_MONTHLY_PLACEHOLDER",
-  stripeYearly: "STRIPE_LINK_YEARLY_PLACEHOLDER"
+  stripeMonthly: "https://buy.stripe.com/14A00l5Gsfv4f87dKc6oo0b",
+  stripeYearly: "https://buy.stripe.com/14AaEZ6Kw1EeaRR8pS6oo0c"
 };

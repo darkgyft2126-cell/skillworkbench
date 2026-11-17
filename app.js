@@ -23,6 +23,6 @@
     if(!topic){msg.textContent='Please write a topic first.';return;}
     fetch(window.SW_CONFIG.apiBase+'/suggest',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:email,topic:topic})})
       .then(function(r){if(!r.ok)throw 0;msg.textContent='Thank you — your suggestion is recorded.';form.reset();})
-      .catch(function(){msg.textContent='The suggestion box opens when the member service launches. Thank you for the idea — please check back at launch.';});
+      .catch(function(){msg.textContent='The suggestion box could not be reached just now. Thank you for the idea — please try again in a little while.';});
   });}
 })();

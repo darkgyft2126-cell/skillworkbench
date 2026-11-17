@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in — SkillWorkbench</title>
+<meta name="description" content="Sign in to your SkillWorkbench account.">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">SkillWorkbench</a>
+  <nav>
+    <a href="index.html#catalog">Courses</a>
+    <a href="how-it-works.html">How it works</a>
+    <a href="subscribe.html">Subscribe</a>
+    <a href="dashboard.html">Sign in</a>
+  </nav>
+</header>
+<main>
+
+<article class="page">
+  <h1>Member sign in</h1>
+  <div id="auth-box">
+    <form id="login-form">
+      <h2>Sign in</h2>
+      <label>Email <input type="email" id="li-email" required autocomplete="email"></label>
+      <label>Password <input type="password" id="li-pass" required autocomplete="current-password"></label>
+      <button type="submit">Sign in</button>
+      <p class="fine" id="li-msg" role="status"></p>
+    </form>
+    <form id="register-form">
+      <h2>Create an account</h2>
+      <label>Email <input type="email" id="rg-email" required autocomplete="email"></label>
+      <label>Password (8+ characters) <input type="password" id="rg-pass" required minlength="8" autocomplete="new-password"></label>
+      <button type="submit">Create account</button>
+      <p class="fine">An account lets you track your courses. Membership (paid access) is separate — see <a href="subscribe.html">Subscribe</a>. Use the same email for both so your membership attaches to this account.</p>
+      <p class="fine" id="rg-msg" role="status"></p>
+    </form>
+  </div>
+  <div id="member-box" hidden>
+    <h2>My shelf</h2>
+    <p id="member-status" class="fine"></p>
+    <ul id="my-courses"></ul>
+    <p><button id="logout-btn" type="button">Sign out</button></p>
+  </div>
+  <p class="fine" id="api-note" role="status"></p>
+</article>
+<script>window.SW_SHELF = [{"id": "ai-desk-skills", "title": "AI Desk Skills", "lessons": 32}, {"id": "data-analytics-excel", "title": "Data Analytics with Excel and Google Sheets", "lessons": 32}, {"id": "the-owner-led-marketing-system", "title": "The Owner-Led Marketing System", "lessons": 40}, {"id": "steady-money-foundations", "title": "Steady Money Foundations", "lessons": 32}, {"id": "no-it-department-cybersecurity", "title": "No IT Department: Cybersecurity Fundamentals for Small Business", "lessons": 34}];</script>
+<script src="dashboard.js"></script>
+</main>
+<footer class="site-footer">
+  <p><strong>SkillWorkbench</strong> — practical courses in plain language. skillworkbench.com</p>
+  <p><a href="how-it-works.html">How it works</a> · <a href="subscribe.html">Subscribe</a> · <a href="dashboard.html">Member sign in</a></p>
+  <p class="fine">Every course is self-paced. Certificates record course completion; they are not professional certifications. Prices in USD.</p>
+</footer>
+<script src="config.js"></script>
+</body>
+</html>
